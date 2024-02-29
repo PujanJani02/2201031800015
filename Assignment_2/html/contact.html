@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="../css/contact.css">
+  <script src="https://kit.fontawesome.com/52c43a5099.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logoDiv">
+        <div>
+          <img src="../images/logo.png" alt="logo" class="logo">
+        </div>
+        <div>
+          <h1 class="titleText">WorkFit</h1>
+        </div>
+      </div>
+      <ul class="navlist">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html" id="contact">Contact</a></li>
+      </ul>
+      <div class="profile">
+        <a href="profile.html"><i class="far fa-user-circle"></i></a>
+      </div>
+      <div class="barDiv">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
+    <div class="navlistDropdownDiv">
+      <ul class="navlistDropdown">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html" id="contact">Contact</a></li>
+        <li><a href="#">Profile</a></li>
+      </ul>
+      <div class="closeBtnDiv">
+        <button class="closeBtn"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="titleDiv">
+      <h1 class="title">Contact us</h1>
+    </div>
+    <div class="container">
+      <form action="" class="contactForm">
+        <div class="formDiv">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+        <div class="formDiv">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="formDiv">
+          <label for="phone">Phone number</label>
+          <input type="email" id="phone" name="phone" placeholder="Enter your phone number" required>
+        </div>
+        <div class="formDiv">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Enter your message" rows="5"></textarea>
+        </div>
+        <div class="sendBtnDiv">
+          <button type="submit" class="sendBtn">Send</button>
+        </div>
+      </form>
+      <div class="contactDetails">
+        <div class="thankYouTitle">
+          <h2>Thank you for visiting WorkFit.</h2>
+        </div>
+        <div class="contactDetailsTitle">
+          <h2>Our contact details</h2>
+        </div>
+        <div class="contactDetailsDiv">
+          <i class="fa-solid fa-envelope"></i>
+          <p>workfitbusiness@gmail.com</p>
+        </div>
+        <div class="contactDetailsDiv">
+          <i class="fa-solid fa-phone"></i>
+          <p>7894561230</p>
+        </div>
+        <div class="contactDetailsDiv">
+          <i class="fa-solid fa-map-marker-alt"></i>
+          <p>Ahmedabad, India</p>
+        </div>
+        <div class="socials">
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fab fa-youtube"></i>
+          <i class="fab fab fab fa-whatsapp"></i>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <script>
+    const navlistDropdownDiv = document.getElementsByClassName('navlistDropdownDiv')[0];
+    const barDiv = document.getElementsByClassName('barDiv')[0];
+    const closeBtn = document.getElementsByClassName('closeBtn')[0];
+
+    barDiv.addEventListener('click', () => {
+      navlistDropdownDiv.style.display = 'flex';
+    });
+
+    closeBtn.addEventListener('click', () => {
+      navlistDropdownDiv.style.display = 'none';
+    });
+  </script>
+</body>
+
+</html>

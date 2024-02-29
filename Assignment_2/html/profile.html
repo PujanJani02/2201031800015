@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+  <link rel="stylesheet" href="../css/profile.css">
+  <script src="https://kit.fontawesome.com/52c43a5099.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="backBtnDiv">
+    <button class="backBtn">
+      <a href="home.html"><i class="fa-solid fas fa-arrow-left"></i></a>
+    </button>
+  </div>
+  <div class="container">
+    <div class="titleDiv">
+      <h1>Your Profile</h1>
+    </div>
+    <form action="">
+      <div class="nameDiv">
+        <div class="formDiv">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="fname" placeholder="Enter your first name">
+        </div>
+        <div class="formDiv">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lname" placeholder="Enter your last name">
+        </div>
+      </div>
+      <div class="formDiv">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+      </div>
+      <div class="formDiv">
+        <label for="phone">Phone number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+      </div>
+      <div class="ageGenderDiv">
+        <div class="formDiv">
+          <label for="age">Age</label>
+          <input type="number" id="age" name="age" placeholder="Enter your age">
+        </div>
+        <div class="genderDiv">
+          <p>Gender</p>
+          <div class="optionsDiv">
+            <div class="formDiv">
+              <input type="radio" id="male" name="gender" checked>
+              <label for="male">Male</label>
+            </div>
+            <div class="formDiv">
+              <input type="radio" id="female" name="gender">
+              <label for="female">Female</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="heightWeightDiv">
+        <div class="formDiv">
+          <label for="height">Height (cm)</label>
+          <input type="number" id="height" name="height" placeholder="Enter your height">
+        </div>
+        <div class="formDiv">
+          <label for="weight">Weight (kg)</label>
+          <input type="number" id="weight" name="weight" placeholder="Enter your weight">
+        </div>
+      </div>
+      <div class="saveBtnDiv">
+        <button class="saveBtn">Save</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

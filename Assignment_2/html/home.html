@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="../css/home.css">
+  <script src="https://kit.fontawesome.com/52c43a5099.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logoDiv">
+        <div>
+          <img src="../images/logo.png" alt="logo" class="logo">
+        </div>
+        <div>
+          <h1 class="titleText">WorkFit</h1>
+        </div>
+      </div>
+      <ul class="navlist">
+        <li><a href="home.html" id="home">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="profile">
+        <a href="profile.html"><i class="far fa-user-circle"></i></a>
+      </div>
+      <div class="barDiv">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
+    <div class="navlistDropdownDiv">
+      <ul class="navlistDropdown">
+        <li><a href="home.html" id="home2">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="profile.html">Profile</a></li>
+      </ul>
+      <div class="closeBtnDiv">
+        <button class="closeBtn"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <form class="workoutPlanGenerateDiv">
+        <div class="formDiv">
+          <label for="age">Age</label>
+          <input type="number" min="12" value="18" id="age" name="age" required>
+        </div>
+        <div class="formDiv">
+          <label for="weight">Weight (kg)</label>
+          <input type="number" value="50" id="weight" name="weight" required>
+        </div>
+        <div class="formDiv">
+          <label for="height">Height (cm)</label>
+          <input type="number" value="170" id="height" name="height" required>
+        </div>
+        <div class="formDiv">
+          <label for="frequency">Frequency</label>
+          <select id="frequency" name="frequency" required>
+            <option selected="true">Daily</option>
+            <option>2-3 days per week</option>
+            <option>4-5 days per week</option>
+          </select>
+        </div>
+        <div class="formDiv">
+          <label for="goal">Goal</label>
+          <select id="goal" name="goal" required>
+            <option selected="true">Weight loss</option>
+            <option>Weight gain</option>
+            <option>Build muscle</option>
+            <option>Increase strength</option>
+          </select>
+        </div>
+        <div class="generateBtnDiv">
+          <button type="submit" class="generateBtn">Generate</button>
+        </div>
+      </form>
+    </div>
+    <div class="workoutPlanDiv">
+      <div class="workoutPlanTitleDiv">
+        <p>Your workout plan</p>
+      </div>
+      <div class="exercisesContainer">
+        <div class="exerciseDiv">
+          <div class="exerciseImgDiv">
+            <img src="../images/push-up.jpeg" alt="push-up" class="exerciseImg">
+          </div>
+          <div class="exerciseDetails">
+            <p class="exerciseName">Push-up</p>
+            <p class="exerciseRepAndSet">8 x 3</p>
+          </div>
+        </div>
+        <div class="exerciseDiv">
+          <div class="exerciseImgDiv">
+            <img src="../images/squat.jpeg" alt="push-up" class="exerciseImg">
+          </div>
+          <div class="exerciseDetails">
+            <p class="exerciseName">Push-up</p>
+            <p class="exerciseRepAndSet">8 x 3</p>
+          </div>
+        </div>
+        <div class="exerciseDiv">
+          <div class="exerciseImgDiv">
+            <img src="../images/bicep-curl.jpeg" alt="push-up" class="exerciseImg">
+          </div>
+          <div class="exerciseDetails">
+            <p class="exerciseName">Push-up</p>
+            <p class="exerciseRepAndSet">8 x 3</p>
+          </div>
+        </div>
+        <div class="exerciseDiv">
+          <div class="exerciseImgDiv">
+            <img src="../images/signup-page-bg.webp" alt="push-up" class="exerciseImg">
+          </div>
+          <div class="exerciseDetails">
+            <p class="exerciseName">Push-up</p>
+            <p class="exerciseRepAndSet">8 x 3</p>
+          </div>
+        </div>
+        <div class="exerciseDiv">
+          <div class="exerciseImgDiv">
+            <img src="../images/login-page-bg.jpg" alt="push-up" class="exerciseImg">
+          </div>
+          <div class="exerciseDetails">
+            <p class="exerciseName">Push-up</p>
+            <p class="exerciseRepAndSet">8 x 3</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    const navlistDropdownDiv = document.getElementsByClassName('navlistDropdownDiv')[0];
+    const barDiv = document.getElementsByClassName('barDiv')[0];
+    const closeBtn = document.getElementsByClassName('closeBtn')[0];
+
+    barDiv.addEventListener('click', () => {
+      navlistDropdownDiv.style.display = 'flex';
+    });
+
+    closeBtn.addEventListener('click', () => {
+      navlistDropdownDiv.style.display = 'none';
+    });
+  </script>
+</body>
+
+</html>

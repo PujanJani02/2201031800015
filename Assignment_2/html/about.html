@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <link rel="stylesheet" href="../css/about.css">
+  <script src="https://kit.fontawesome.com/52c43a5099.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logoDiv">
+        <div>
+          <img src="../images/logo.png" alt="logo" class="logo">
+        </div>
+        <div>
+          <h1 class="titleText">WorkFit</h1>
+        </div>
+      </div>
+      <ul class="navlist">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html" id="about">About</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="profile">
+        <a href="profile.html"><i class="far fa-user-circle"></i></a>
+      </div>
+      <div class="barDiv">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
+    <div class="navlistDropdownDiv">
+      <ul class="navlistDropdown">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html" id="about2">About</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#">Profile</a></li>
+      </ul>
+      <div class="closeBtnDiv">
+        <button class="closeBtn"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="aboutTitle">
+      <h1>About</h1>
+      <p>Craft Your Dream Workout, Your Way</p>
+    </div>
+    <div class="aboutContent">
+      <div class="aboutContentDiv">
+        <p>Ever felt lost in a generic workout plan that doesn't match your goals or preferences? We get it. That's why
+          we created WorkFit,
+          the custom workout planner designed to empower you to achieve YOUR unique fitness aspirations.</p>
+      </div>
+      <div class="aboutContentDiv">
+        <p>We're a group of passionate fitness enthusiasts, developers, and trainers dedicated to building the best
+          custom workout experience.</p>
+      </div>
+      <div class="aboutContentDiv">
+        <p>Our intelligent web app acts as your personalized workout planner and guide. Whether you're a seasoned gym
+          rat or just starting your fitness journey, we've got your back. Tell us your age, weight, height, workout
+          frequency, and ultimate goal, and we'll craft a plan that perfectly aligns with your vision.</p>
+      </div>
+      <div class="aboutContentDiv">
+        <p>Ready to unlock your fitness potential and achieve your goals? Sign up for a free trial and experience the
+          power of personalized
+          workouts. With WebFit, you're not just getting a workout plan, you're joining a community dedicated to
+          supporting your success.</p>
+      </div>
+
+      <footer>
+        <div class="footerContent">
+          <div class="footerContentDiv">
+            <h3>Workout planner</h3>
+            <p>Online workout planner lets you create free personalized workout plans to help you reach your fitness
+              goals.
+            </p>
+          </div>
+          <div class="footerContentDiv">
+            <h3>About us</h3>
+            <p>We are your personal trainer and guide. Our aim is to make sports enjoyable for a healthy life.</p>
+          </div>
+          <div class="footerContentDiv">
+            <h3>FAQs</h3>
+            <ul>
+              <li>What equipment do I need to use your plans?</li>
+              <li>Do I need to have experience with fitness to use your website?</li>
+              <li>Is there a cost associated with using your website?</li>
+            </ul>
+          </div>
+          <div class="footerContentDiv">
+            <h3>Contact us</h3>
+            <div class="contact">
+              <i class="fas fa-envelope"></i>
+              <p>workfitbusiness@gmail.com</p>
+            </div>
+            <div class="contact">
+              <i class="fas fa-phone-alt"></i>
+              <p>7894561230</p>
+            </div>
+            <div class="contact">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>Ahmedabad, India</p>
+            </div>
+            <div class="socials">
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fab fa-youtube"></i>
+              <i class="fab fab fab fa-whatsapp"></i>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      const navlistDropdownDiv = document.getElementsByClassName('navlistDropdownDiv')[0];
+      const barDiv = document.getElementsByClassName('barDiv')[0];
+      const closeBtn = document.getElementsByClassName('closeBtn')[0];
+
+      barDiv.addEventListener('click', () => {
+        navlistDropdownDiv.style.display = 'flex';
+      });
+
+      closeBtn.addEventListener('click', () => {
+        navlistDropdownDiv.style.display = 'none';
+      });
+
+    </script>
+</body>
+
+</html>

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
-  <link rel="stylesheet" href="../css/login.css">
+  <link rel="stylesheet" href="css/login.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap" rel="stylesheet">
@@ -26,13 +26,13 @@
       <h2 class="loginText">Login</h2>
     </div>
 
-    <form class="loginDiv">
-      <div class="emailDiv">
-        <label for="email" class="emailLabel">Email</label>
+    <form class="loginDiv" action="html/home.html">
+      <div class="formDiv">
+        <label for="email">Email</label>
         <input type="email" id="email" name="email" class="emailInput" required>
       </div>
-      <div class="passwordDiv">
-        <label for="password" class="passwordLabel">Password</label>
+      <div class="formDiv">
+        <label for="password">Password</label>
         <input type="password" id="password" name="password" class="passwordInput" required>
       </div>
       <div class="passwordTxtDiv">
@@ -43,7 +43,7 @@
         <button type="submit" class="loginBtn">Login</button>
       </div>
       <div class="signupDiv">
-        <p class="signupTxt">New user? <a href="../html/signup.html" class="signupLink">Sign up</a></p>
+        <p class="signupTxt">New user? <a href="html/signup.html" class="signupLink">Sign up</a></p>
       </div>
     </form>
   </div>

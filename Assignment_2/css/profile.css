@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.300),
+      rgba(0, 0, 0, 0.300)), url("../images/profile-page-bg.jpg");
+  background-size: cover;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titleDiv {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.formDiv {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+.formDiv label {
+  margin: 0.5rem 0;
+}
+
+.formDiv input {
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border-radius: 10px;
+  border: none;
+  opacity: 80%;
+}
+
+.formDiv input:focus {
+  outline: none;
+}
+
+.nameDiv {
+  display: flex;
+}
+
+.nameDiv .formDiv:first-child {
+  margin-right: 1rem;
+}
+
+.ageGenderDiv,
+.optionsDiv,
+.heightWeightDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.genderDiv p {
+  margin-bottom: 0.5rem;
+}
+
+.optionsDiv .formDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.optionsDiv .formDiv {
+  margin-right: 1.5rem;
+}
+
+.optionsDiv .formDiv label {
+  margin-left: 0.5rem;
+}
+
+.saveBtnDiv {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.saveBtn {
+  padding: 0.5rem 2rem;
+  opacity: 80%;
+  border-radius: 10px;
+  border: none;
+}
+
+.saveBtn:hover {
+  opacity: 100%;
+  cursor: pointer;
+}
+
+.backBtnDiv {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.backBtn {
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 32px;
+}
+
+.backBtn i {
+  color: white;
+}
+
+@media screen and (max-width: 472px) {
+  body {
+    background: linear-gradient(rgba(0, 0, 0, 0.300),
+        rgba(0, 0, 0, 0.300)), url("../images/profile-page-bg-2.jpg");
+    background-size: cover;
+    overflow: hidden;
+  }
+}

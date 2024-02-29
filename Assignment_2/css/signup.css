@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -51,10 +52,6 @@ body::before {
 }
 
 .signupTxtDiv {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-left: 1rem;
   margin-bottom: 1.5rem;
 }
 
@@ -66,9 +63,8 @@ body::before {
 }
 
 .signupDiv {
-  display: flex;
-  flex-direction: column;
   position: relative;
+  padding: 1rem 3rem;
 }
 
 .signupDiv::before {
@@ -76,54 +72,28 @@ body::before {
   content: "";
   opacity: 52%;
   height: 100%;
-  width: 150%;
+  width: 100%;
   top: 0;
-  left: -35px;
+  left: 0;
   border-radius: 10px;
   position: absolute;
   z-index: -1;
 }
 
-.emailDiv {
-  display: flex;
-  flex-direction: column;
-  padding: 2rem 0rem;
-  padding-bottom: 1rem;
-  width: 120%;
-}
-
-.emailLabel {
-  font-size: 20px;
-  color: white;
-  margin: 0 0 10px 0;
-}
-
-.emailInput {
-  border-radius: 5px;
-  border: none;
-  padding: 10px;
-  opacity: 70%;
-  font-size: 18px;
-}
-
-.emailInput:focus {
-  outline: none;
-}
-
-.passwordDiv {
+.formDiv {
   display: flex;
   flex-direction: column;
   padding: 1rem 0rem;
-  width: 120%;
+  padding-bottom: 1rem;
 }
 
-.passwordLabel {
+.formDiv label {
   font-size: 20px;
   color: white;
   margin: 0 0 10px 0;
 }
 
-.passwordInput {
+.formDiv input {
   border-radius: 5px;
   border: none;
   padding: 10px;
@@ -131,7 +101,7 @@ body::before {
   font-size: 18px;
 }
 
-.passwordInput:focus {
+.formDiv input:focus {
   outline: none;
 }
 
@@ -143,37 +113,11 @@ body::before {
   padding-left: 10px;
 }
 
-.confirmPasswordDiv {
-  display: flex;
-  flex-direction: column;
-  padding: 1rem 0rem;
-  width: 120%;
-}
-
-.confirmPasswordLabel {
-  font-size: 20px;
-  color: white;
-  margin: 0 0 10px 0;
-}
-
-.confirmPasswordInput {
-  border-radius: 5px;
-  border: none;
-  padding: 10px;
-  opacity: 70%;
-  font-size: 18px;
-}
-
-.confirmPasswordInput:focus {
-  outline: none;
-}
-
 .signupBtnDiv {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  width: 100%;
 }
 
 .signupBtn {
@@ -185,6 +129,11 @@ body::before {
   color: white;
   font-size: 20px;
   cursor: pointer;
+}
+
+.signupBtn a {
+  color: white;
+  text-decoration: none;
 }
 
 .signupBtn:hover {
@@ -202,7 +151,6 @@ body::before {
 .loginTxt {
   color: white;
   font-size: 16px;
-  padding-left: 2rem;
 }
 
 .loginLink {
@@ -211,4 +159,80 @@ body::before {
   cursor: pointer;
   text-decoration: none;
   margin-left: 10px;
+}
+
+@media screen and (max-width: 1500px) {
+  .logo {
+    width: 100px;
+    height: 70px;
+  }
+
+  .titleText {
+    font-size: 30px;
+  }
+
+  .signupDiv {
+    padding: 0rem 2rem;
+  }
+
+  .formDiv label {
+    font-size: 18px;
+  }
+
+  .formDiv input {
+    padding: 5px;
+  }
+
+  .showPassword {
+    font-size: 14px;
+  }
+
+  .signupBtn {
+    padding: 0.5rem 2rem;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .logo {
+    width: 100px;
+    height: 70px;
+  }
+
+  .titleText {
+    font-size: 28px;
+  }
+
+  .signupDiv {
+    padding: 0rem 1.5rem;
+  }
+
+  .formDiv label {
+    font-size: 16px;
+  }
+
+  .formDiv input {
+    padding: 5px;
+  }
+
+  .showPassword {
+    font-size: 14px;
+  }
+
+  .signupBtn {
+    padding: 0.5rem 2rem;
+    font-size: 16px;
+  }
+
+  body::before {
+    background: linear-gradient(rgba(0, 0, 0, 0.300),
+        rgba(0, 0, 0, 0.300)), url("../images/signup-page-bg-2.jpg");
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 458px) {
+  .signupText {
+    font-size: 20px;
+  }
 }

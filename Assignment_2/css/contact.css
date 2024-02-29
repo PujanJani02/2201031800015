@@ -1,0 +1,240 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #323131;
+}
+
+.logoDiv {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+.titleText {
+  color: white;
+  margin-left: 10px;
+}
+
+.profile {
+  font-size: 32px;
+  padding-right: 10px;
+}
+
+.profile i {
+  color: white;
+}
+
+.barDiv {
+  display: none;
+  font-size: 32px;
+  padding-right: 10px;
+  position: relative;
+}
+
+.navlist {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 3rem;
+}
+
+.navlist li,
+.navlistDropdown li {
+  list-style: none;
+  padding-inline: 1.5rem;
+  font-size: 18px;
+}
+
+#contact,
+#contact2 {
+  color: white;
+  font-weight: 600;
+}
+
+.navlist li a,
+.navlistDropdown li a {
+  color: rgba(255, 255, 255, 0.662);
+  text-decoration: none;
+}
+
+.navlistDropdown li {
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+.navlistDropdownDiv {
+  display: none;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #323131b3;
+  padding: 1rem;
+}
+
+.closeBtn {
+  background-color: transparent;
+  border: none;
+}
+
+.closeBtn i {
+  font-size: 20px;
+}
+
+main {
+  background: linear-gradient(rgba(0, 0, 0, 0.300),
+      rgba(0, 0, 0, 0.300)), url("../images/contact-page-bg.jpg");
+  background-size: cover;
+  height: 100%;
+  color: white;
+  padding: 2rem;
+}
+
+.titleDiv {
+  margin-bottom: 1.5rem;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contactForm {
+  width: 40%;
+}
+
+.formDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.formDiv label {
+  margin-bottom: 0.5rem;
+  font-size: 18px;
+}
+
+.formDiv input,
+textarea {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 8px;
+  background-color: black;
+  opacity: 60%;
+  color: white;
+}
+
+.formDiv input:focus,
+textarea:focus {
+  outline: none;
+}
+
+.sendBtnDiv {
+  padding: 0.5rem;
+}
+
+.sendBtn {
+  padding: 0.5rem 3rem;
+  border: none;
+  border-radius: 8px;
+  background-color: black;
+  opacity: 60%;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.sendBtn:hover {
+  opacity: 80%;
+}
+
+.contactDetails {
+  padding-right: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.thankYouTitle {
+  margin-bottom: 1.5rem;
+  font-size: 22px;
+}
+
+.contactDetailsTitle {
+  margin-bottom: 1rem;
+}
+
+.contactDetailsDiv {
+  display: flex;
+  padding: 0.5rem;
+}
+
+.contactDetailsDiv i {
+  margin-right: 0.5rem;
+}
+
+.socials {
+  display: flex;
+  padding-left: 2rem;
+  margin-top: 1rem;
+}
+
+.socials i {
+  font-size: 20px;
+  margin-right: 1rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 842px) {
+  body {
+    overflow: visible;
+    height: 100%;
+  }
+
+  .contactForm {
+    width: 60%;
+  }
+
+}
+
+@media screen and (max-width: 686px) {
+  .barDiv {
+    display: block;
+    z-index: 1;
+  }
+
+  .navlist,
+  .profile {
+    display: none;
+  }
+
+  .contactForm {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  body {
+    height: 100%;
+  }
+}

@@ -1,0 +1,149 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #323131;
+}
+
+.logoDiv {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+.titleText {
+  color: white;
+  margin-left: 10px;
+}
+
+.profile {
+  font-size: 32px;
+  padding-right: 10px;
+}
+
+.profile i {
+  color: white;
+}
+
+.barDiv {
+  display: none;
+  font-size: 32px;
+  padding-right: 10px;
+  position: relative;
+}
+
+.navlist {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 3rem;
+}
+
+.navlist li,
+.navlistDropdown li {
+  list-style: none;
+  padding-inline: 1.5rem;
+  font-size: 18px;
+}
+
+#faq,
+#faq2 {
+  color: white;
+  font-weight: 600;
+}
+
+.navlist li a,
+.navlistDropdown li a {
+  color: rgba(255, 255, 255, 0.662);
+  text-decoration: none;
+}
+
+.navlistDropdown li {
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+.navlistDropdownDiv {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #323131b3;
+  padding: 1rem;
+}
+
+.closeBtn {
+  background-color: transparent;
+  border: none;
+}
+
+.closeBtn i {
+  font-size: 20px;
+}
+
+main {
+  background: linear-gradient(rgba(0, 0, 0, 0.300),
+      rgba(0, 0, 0, 0.300)), url("../images/faq-page-bg.jpg");
+  background-size: cover;
+  min-height: 100%;
+  color: white;
+  padding: 2rem;
+}
+
+.title {
+  margin-bottom: 1.5rem;
+}
+
+.faq {
+  margin-bottom: 2rem;
+}
+
+.question {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+.question span {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.question h3 {
+  padding-left: 0.5rem;
+}
+
+.faq p {
+  padding-left: 1.4rem;
+}
+
+@media screen and (max-width: 686px) {
+  .barDiv {
+    display: block;
+  }
+
+  .navlist,
+  .profile {
+    display: none;
+  }
+
+  main {
+    background: linear-gradient(rgba(0, 0, 0, 0.300),
+        rgba(0, 0, 0, 0.300)), url("../images/faq-page-bg-2.jpg");
+    background-size: cover;
+  }
+}

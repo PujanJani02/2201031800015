@@ -1,0 +1,310 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #323131;
+}
+
+.logoDiv {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+.titleText {
+  color: white;
+  margin-left: 10px;
+}
+
+.profile {
+  font-size: 32px;
+  padding-right: 10px;
+}
+
+.profile i {
+  color: white;
+}
+
+.barDiv {
+  display: none;
+  font-size: 32px;
+  padding-right: 10px;
+  position: relative;
+}
+
+.navlist {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 3rem;
+}
+
+.navlist li,
+.navlistDropdown li {
+  list-style: none;
+  padding-inline: 1.5rem;
+  font-size: 18px;
+}
+
+#home,
+#home2 {
+  color: white;
+  font-weight: 600;
+}
+
+.navlist li a,
+.navlistDropdown li a {
+  color: rgba(255, 255, 255, 0.662);
+  text-decoration: none;
+}
+
+.navlistDropdown li {
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+.navlistDropdownDiv {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #323131b3;
+  padding: 1rem;
+}
+
+.closeBtn {
+  background-color: transparent;
+  border: none;
+}
+
+.closeBtn i {
+  font-size: 20px;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.container {
+  background: linear-gradient(rgba(0, 0, 0, 0.300),
+      rgba(0, 0, 0, 0.300)), url("../images/home-page-bg.jpg");
+  background-size: cover;
+  width: 70%;
+  min-height: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.workoutPlanDiv {
+  width: 30%;
+  background-color: #5a5959;
+  overflow-y: scroll;
+}
+
+.workoutPlanGenerateDiv {
+  position: relative;
+  padding: 0.5rem 2rem;
+  width: 30%;
+}
+
+.workoutPlanGenerateDiv::before {
+  background-color: #B2ACAC;
+  content: "";
+  opacity: 52%;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  position: absolute;
+  z-index: -1;
+}
+
+.formDiv {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 0rem;
+}
+
+.formDiv label {
+  font-size: 20px;
+  color: black;
+  margin: 0 0 10px 0;
+}
+
+.formDiv input,
+select {
+  border-radius: 5px;
+  border: none;
+  padding: 8px;
+  opacity: 80%;
+  font-size: 16px;
+  color: white;
+  background-color: black;
+}
+
+.formDiv input:focus,
+select:focus {
+  outline: none
+}
+
+
+.generateBtnDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.generateBtn {
+  padding: 0.5rem 2.5rem;
+  border-radius: 5px;
+  border: none;
+  background-color: black;
+  opacity: 80%;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+}
+
+.generateBtn:hover {
+  background-color: #323131;
+  opacity: 100%;
+}
+
+.workoutPlanTitleDiv {
+  text-align: center;
+  padding: 0.5rem;
+  border-bottom: 1px solid;
+}
+
+.workoutPlanTitleDiv p {
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+}
+
+.exerciseDiv {
+  display: flex;
+  padding: 1rem;
+}
+
+.exerciseImgDiv {
+  width: 35%;
+  height: 120px;
+}
+
+.exerciseImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.exerciseDetails {
+  padding-left: 1rem;
+}
+
+.exerciseName {
+  font-size: 18px;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.exerciseRepAndSet {
+  color: white;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 968px) {
+
+  .workoutPlanGenerateDiv,
+  .exerciseImgDiv {
+    width: 50%;
+  }
+
+  .workoutPlanDiv {
+    width: 45%;
+  }
+
+  .container {
+    background: linear-gradient(rgba(0, 0, 0, 0.300),
+        rgba(0, 0, 0, 0.300)), url("../images/home-page-2.jpg");
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 686px) {
+  .barDiv {
+    display: block;
+    z-index: 1;
+  }
+
+  .navlist,
+  .profile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+
+  body {
+    overflow: visible
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  .container {
+    padding: 1.5rem 0;
+  }
+
+  .container,
+  .workoutPlanDiv {
+    width: 100%;
+  }
+
+  .workoutPlanDiv {
+    overflow: visible;
+  }
+
+  .formDiv label {
+    font-size: 16px;
+  }
+
+  .formDiv input,
+  select {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .generateBtnDiv {
+    padding: 1rem;
+  }
+
+  .generateBtn {
+    font-size: 16px;
+    padding: 0.5rem 1rem;
+  }
+
+}
